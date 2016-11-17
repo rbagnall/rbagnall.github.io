@@ -196,6 +196,9 @@ p.shopping-cart{
 h1{
 	font-size: 4em;
 }
+.kelaoke-title{
+	max-width: 80%;
+}
  }
 
   @media only screen and (min-width : 768px) {
