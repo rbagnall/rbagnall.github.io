@@ -46,6 +46,7 @@ i.fa.fa-facebook, i.fa.fa-etsy, i.fa.fa-instagram{
 .kelaoke-title{
 	margin-top: 4%;
 	max-height: 200px;
+	max-width: 70%;
 }
 
 /* front page styling */
@@ -104,11 +105,11 @@ div > div > div > ul > li >a{
 /* weavings jewellery styling */
 h1{
 	font-family: 'Quicksand', sans-serif;
-	font-size: 5em;	
+	font-size: 4em;	
 	font-weight: bold;
 }
 img.weavings-img.center-block, img.pendant-img.center-block, img.resin-img.center-block{
-	max-width:100%;
+	max-width:90%;
 }
 .weaving-description, .pendant-description, .pendantBead-description, .resin-description{
  	font-size: 1.5em;
@@ -139,12 +140,14 @@ iframe{
 img.media{
 	min-height: 80px;
     vertical-align: middle;
+    margin-bottom: 20px;
 }
 .interview{
 	font-size: 1.5em;
     vertical-align: middle;
-}/* workshop page */
+}
 
+/* workshop page */
 .workshop{
 	width:90%;
 }
@@ -173,16 +176,32 @@ p.about{/* space about paragraphs*/
 }
 
 footer{
-	padding: 1%;
+	padding: 10px;
 	color: white;
 	font-weight: bold;
 	background-color: black;
 	height: 80px;
 }
-
-
 .spacer{ /* adds spacing */
 	padding-top: 10%;
 	background-color: 
+}
+
+@media only screen and (max-width : 767px) {
+	h1{
+		font-size: 3em;
+		background-color: green;
+		margin: 0 auto;
+		max-width: 60%;
+		text-align: center;
+	}
+	.kelaoke-title{
+		background-color: green;
+		margin: 0 auto;
+		max-width: 60%;
+	}
+	.weaving-border, .jewellery-border, .resin-border{
+	border-right: 0px;	
+	}
 }
 
