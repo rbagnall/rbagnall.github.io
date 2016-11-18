@@ -190,13 +190,11 @@ footer{
 @media only screen and (max-width : 767px) {
 	h1{
 		font-size: 3em;
-		background-color: green;
 		margin: 0 auto;
 		max-width: 60%;
 		text-align: center;
 	}
 	.kelaoke-title{
-		background-color: green;
 		margin: 0 auto;
 		max-width: 60%;
 	}
