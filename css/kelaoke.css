@@ -30,6 +30,7 @@ body{
 .dropdown-menu>li>a{/* navbar dropdown links*/
 	font-family: 'Quicksand', sans-serif;
 }
+/* end navbar styling */
 
 /* font awesome styling */
 i.fa.fa-home{
@@ -41,6 +42,7 @@ i.fa.fa-facebook, i.fa.fa-etsy, i.fa.fa-instagram{
 	padding-right: 8%;
 	color: #FFF;
 }
+/* end font awesome styling */
 
 /* main title logo */
 .kelaoke-title{
@@ -49,19 +51,26 @@ i.fa.fa-facebook, i.fa.fa-etsy, i.fa.fa-instagram{
 	max-width: 70%;
 }
 
-/* front page styling */
-h3{
+/* headings styling */
+h1{
 	font-family: 'Quicksand', sans-serif;
-	font-size: 2em;
+	font-size: 4em;	
+	font-weight: bold;
 }
+
 h2{
 	font-family: 'Quicksand', sans-serif;
 }
 
+h3{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+}
+
+/* index page styling */
 .imgLinks{
 	max-width: 70%;
 }
-
 
 .jewellery, .weavings, .ceramics{
 	width: 30%;
@@ -90,8 +99,9 @@ img.imgLinks.center-block:hover{ /* zoom images on hover */
     -o-transform:scale(1.05); /* Opera */
      transform:scale(1.05);
 }
-/* end of front page styling */
+/* end index page styling */
 
+/* products pages styling */
 /* jewellery tabs */ 
 div > div > div > ul > li >a{
 	font-family: 'Quicksand', sans-serif;
@@ -102,12 +112,7 @@ div > div > div > ul > li >a{
 	margin: 2px;
 } 
 
-/* weavings jewellery styling */
-h1{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 4em;	
-	font-weight: bold;
-}
+/* weavings, jewellery, resin image styling */
 img.weavings-img.center-block, img.pendant-img.center-block, img.resin-img.center-block{
 	max-width:90%;
 }
@@ -115,8 +120,14 @@ img.weavings-img.center-block, img.pendant-img.center-block, img.resin-img.cente
  	font-size: 1.5em;
  	padding: 5% 5% 0% 5%;
  	min-height: 200px;
- }
+}
+/* right aligned grey border */
+.weaving-border, .jewellery-border, .resin-border{
+	border-right: 1px solid #ccc; 
+	min-height: 625px;
+}
 
+/* availability buttons styling */
 a.btn.btn-default{
  	color: red;
  	font-family: times;
@@ -125,27 +136,29 @@ p.shopping-cart{
 	font-size: 1.5em;
 	padding-left: 10%;
 }
-
-.weaving-border, .jewellery-border, .resin-border{
-	border-right: 1px solid #ccc; 
-	min-height: 625px;
-}
+/* end products pages styling */
 
 /* media page */
 iframe{
-	max-width: 100%
+	max-width: 100%;
 	border:none;
 	overflow:hidden;
+	width: 320px;
+	height: 600px;
+	border-style: none;
 }
+
 img.media{
 	min-height: 80px;
     vertical-align: middle;
     margin-bottom: 20px;
 }
+
 .interview{
 	font-size: 1.5em;
     vertical-align: middle;
 }
+/* end media page styling */
 
 /* workshop page */
 .workshop{
@@ -156,8 +169,9 @@ h3.workshop{
 	text-align: center;
 	text-decoration: underline;
 	color: black;
+	min-height: 100px;
 }
-
+/* end workshop page styling */
 
 /* about page */
 img.about{/* kelly's photo*/
@@ -169,6 +183,7 @@ p.about{/* space about paragraphs*/
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+/* end about page styling */
 
 /* footer styling */
 #container{
@@ -182,11 +197,19 @@ footer{
 	background-color: black;
 	height: 80px;
 }
-.spacer{ /* adds spacing */
+
+img.valid-css{
+	border:0;
+	width:70px;
+	height:25px;
+}
+/* end footer styling */
+
+.spacer{ /* div to add spacing in several pages*/
 	padding-top: 10%;
-	background-color: 
 }
 
+/* small screen media queries */
 @media only screen and (max-width : 767px) {
 	h1{
 		font-size: 3em;
